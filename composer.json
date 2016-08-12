@@ -1,0 +1,26 @@
+{
+    "name": "skeeks/cms-google-translate",
+    "description": "Working with google translate api",
+    "keywords": ["module", "cms", "skeeks", "sx", "app", "yii2", "translate", "google"],
+    "homepage": "http://www.skeeks.com/",
+    "type": "yii2-extension",
+    "license": "GPL-3.0+",
+    "support": {
+        "issues": "http://cms.skeeks.com",
+        "source": "https://github.com/skeeks-cms/cms-google-translate"
+    },
+    "authors": [
+        {
+            "name": "Semenov Alexander",
+            "email": "semenov@skeeks.com"
+        }
+    ],
+    "require": {
+        "skeeks/cms": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "skeeks\\cms\\google\\translate\\": ""
+        }
+    }
+}
