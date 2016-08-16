@@ -41,7 +41,7 @@ class m160816_175101_create_table__google_translate_item extends yii\db\Migratio
         $this->createIndex('source_phrase', self::TABLE_NAME, 'source_phrase');
         $this->createIndex('source_format', self::TABLE_NAME, 'source_format');
 
-        $this->createIndex('source_unique', self::TABLE_NAME, ['source_phrase', 'source_language', 'source_format'], true);
+        $this->createIndex('source_unique', self::TABLE_NAME, ['source_phrase', 'source_language', 'source_format', 'target_language'], true);
 
         $this->createIndex('target_language', self::TABLE_NAME, 'target_language');
         $this->createIndex('target_phrase', self::TABLE_NAME, 'target_phrase');

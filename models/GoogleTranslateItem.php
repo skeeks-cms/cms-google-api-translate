@@ -48,7 +48,7 @@ class GoogleTranslateItem extends \skeeks\cms\models\Core
             [['source_language', 'target_language', 'detected_source_language'], 'string', 'max' => 5],
             [['source_phrase'], 'string', 'max' => 128],
             [['target_phrase'], 'string', 'max' => 256],
-            [['source_phrase', 'source_language', 'source_format'], 'unique', 'targetAttribute' => ['source_phrase', 'source_language', 'source_format'], 'message' => 'The combination of Format, Source language and Source phrase has already been taken.'],
+            [['source_phrase', 'source_language', 'source_format', 'target_language'], 'unique', 'targetAttribute' => ['source_phrase', 'source_language', 'source_format', 'target_language'], 'message' => 'The combination of Format, Source language and Source phrase has already been taken.'],
             [['updated_by'], 'exist', 'skipOnError' => true, 'targetClass' => \Yii::$app->hasProperty('user') ? \Yii::$app->user->identityClass : CmsUser::className(), 'targetAttribute' => ['updated_by' => 'id']],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => \Yii::$app->hasProperty('user') ? \Yii::$app->user->identityClass : CmsUser::className(), 'targetAttribute' => ['created_by' => 'id']],
         ]);
