@@ -16,7 +16,8 @@
         }
     ],
     "require": {
-        "skeeks/cms": "*"
+        "skeeks/cms": "*",
+        "skeeks/yii2-google-api": "*"
     },
     "autoload": {
         "psr-4": {
