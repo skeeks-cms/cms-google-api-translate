@@ -23,5 +23,11 @@
         "psr-4": {
             "skeeks\\cms\\google\\translate\\": ""
         }
+    },
+    "extra": {
+        "config-plugin": {
+            "web": "config/main.php",
+            "console": "config/main-console.php"
+        }
     }
 }
