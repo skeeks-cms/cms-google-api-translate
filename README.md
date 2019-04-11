@@ -4,7 +4,6 @@ Component for work with google translate api + save in mysql db
 Partly wrapper over powerful official package from google — google/apiclient
 
 * [google/apiclient](https://github.com/google/google-api-php-client)
-* [google/apiclient-services](https://github.com/google/google-api-php-client-services)
 * https://console.cloud.google.com/home/dashboard
 
 Installation

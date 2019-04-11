@@ -22,7 +22,7 @@ class AdminItemController extends AdminModelEditorController
     {
         $this->name                   = \Yii::t('skeeks/google/translate', 'Google Translate');
         $this->modelShowAttribute      = "id";
-        $this->modelClassName          = GoogleTranslateItem::className();
+        $this->modelClassName          = GoogleTranslateItem::class;
 
         parent::init();
 

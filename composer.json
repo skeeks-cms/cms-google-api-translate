@@ -4,9 +4,9 @@
     "keywords": ["module", "cms", "skeeks", "sx", "app", "yii2", "translate", "google"],
     "homepage": "http://www.skeeks.com/",
     "type": "yii2-extension",
-    "license": "GPL-3.0+",
+    "license": "BSD-3-Clause",
     "support": {
-        "issues": "http://cms.skeeks.com",
+        "issues": "https://cms.skeeks.com",
         "source": "https://github.com/skeeks-cms/cms-google-translate"
     },
     "authors": [
@@ -16,18 +16,24 @@
         }
     ],
     "require": {
-        "skeeks/cms": "*",
-        "skeeks/yii2-google-api": "*"
+        "skeeks/cms": "^5.1.0 || dev-master",
+        "skeeks/yii2-google-api": "^1.1.0 || dev-master"
     },
     "autoload": {
         "psr-4": {
-            "skeeks\\cms\\google\\translate\\": ""
+            "skeeks\\cms\\google\\translate\\": "src/"
         }
     },
     "extra": {
         "config-plugin": {
-            "web": "config/main.php",
-            "console": "config/main-console.php"
+            "web": [
+                "src/config/common.php",
+                "src/config/web.php"
+            ],
+            "console": [
+                "src/config/common.php",
+                "src/config/console.php"
+            ]
         }
     }
 }
