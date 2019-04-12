@@ -8,7 +8,7 @@
 
 namespace skeeks\cms\googleApi\serviceTranslate;
 
-use skeeks\cms\google\translate\models\GoogleTranslateItem;
+use skeeks\cms\googleApi\serviceTranslate\models\GoogleTranslateItem;
 use yii\base\Exception;
 use yii\base\InvalidArgumentException;
 
