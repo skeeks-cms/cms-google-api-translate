@@ -66,7 +66,7 @@ class GoogleApiServiceTranslate extends \skeeks\yii2\googleApi\services\GoogleAp
             }
 
             //Обратимся к google сервису
-            $service = \Yii::$app->googleApi->serviceTranslate;
+            $service = $this->googleService;
 
             $optParams = [];
             if ($source_format !== 'text') {
