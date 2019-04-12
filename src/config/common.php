@@ -12,7 +12,7 @@ return [
             'translations' => [
                 'skeeks/googleApi/translate' => [
                     'class'    => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@skeeks/cms/googleServiceTranslate/messages',
+                    'basePath' => '@skeeks/cms/googleApi/serviceTranslate/messages',
                     'fileMap'  => [
                         'skeeks/googleApi/translate' => 'main.php',
                     ],
@@ -22,14 +22,14 @@ return [
 
         'googleApi' => [
             'serviceTranslateClass' => [
-                'class' => 'skeeks\cms\googleServiceTranslate\GoogleApiServiceTranslate',
+                'class' => 'skeeks\cms\googleApi\serviceTranslate\GoogleApiServiceTranslate',
             ],
         ],
     ],
 
     'modules' => [
         'googleTranslate' => [
-            'class' => 'skeeks\cms\googleServiceTranslate\GoogleTranslateModule',
+            'class' => 'skeeks\cms\googleApi\serviceTranslate\GoogleTranslateModule',
         ],
     ],
 ];

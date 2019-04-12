@@ -6,9 +6,9 @@
  * @date 31.05.2015
  */
 
-namespace skeeks\cms\googleServiceTranslate\controllers;
+namespace skeeks\cms\googleApi\serviceTranslate\controllers;
 
-use skeeks\cms\googleServiceTranslate\models\GoogleTranslateItem;
+use skeeks\cms\googleApi\serviceTranslate\models\GoogleTranslateItem;
 use skeeks\cms\modules\admin\controllers\AdminModelEditorController;
 use yii\helpers\ArrayHelper;
 use yii\helpers\UnsetArrayValue;

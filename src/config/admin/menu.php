@@ -13,7 +13,7 @@ return [
             'googleTranslate' =>
             [
                 'label' => \Yii::t('skeeks/googleApi/translate', 'Google Translate'),
-                "img"       => ['skeeks\cms\googleServiceTranslate\assets\GoogleTranslateAsset', 'images/google-translate.png'],
+                "img"       => ['skeeks\cms\googleApi\serviceTranslate\assets\GoogleTranslateAsset', 'images/google-translate.png'],
                 'priority'  => 250,
 
                 'items' =>
@@ -22,7 +22,7 @@ return [
                         'priority'  => 0,
                         'label' => \Yii::t('skeeks/googleApi/translate', 'Google Translate'),
                         "url"       => ["googleTranslate/admin-item"],
-                        "img"       => ['skeeks\cms\googleServiceTranslate\assets\GoogleTranslateAsset', 'images/google-translate.png'],
+                        "img"       => ['skeeks\cms\googleApi\serviceTranslate\assets\GoogleTranslateAsset', 'images/google-translate.png'],
                     ],
                 ]
             ]

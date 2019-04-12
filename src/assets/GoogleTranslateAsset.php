@@ -5,7 +5,7 @@
  * @copyright 2010 SkeekS (СкикС)
  * @date 24.06.2016
  */
-namespace skeeks\cms\googleServiceTranslate\assets;
+namespace skeeks\cms\googleApi\serviceTranslate\assets;
 
 use yii\web\AssetBundle;
 
@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class GoogleTranslateAsset extends AssetBundle
 {
-    public $sourcePath = '@skeeks/cms/googleServiceTranslate/assets/src';
+    public $sourcePath = '@skeeks/cms/googleApi/serviceTranslate/assets/src';
     public $css = [];
     public $js = [];
 
