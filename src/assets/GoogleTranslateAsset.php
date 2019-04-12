@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class GoogleTranslateAsset extends AssetBundle
 {
-    public $sourcePath = '@skeeks/cms/googleServiceTranslate/assets/source';
+    public $sourcePath = '@skeeks/cms/googleServiceTranslate/assets/src';
     public $css = [];
     public $js = [];
 
