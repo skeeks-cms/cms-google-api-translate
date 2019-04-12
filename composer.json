@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "skeeks\\cms\\googleApi\\services\\": "src/"
+            "skeeks\\cms\\googleApi\\serviceTranslate\\": "src/"
         }
     },
     "extra": {

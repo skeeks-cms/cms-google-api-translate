@@ -12,7 +12,7 @@ return [
         [
             'googleTranslate' =>
             [
-                'label' => \Yii::t('skeeks/google/translate', 'Google Translate'),
+                'label' => \Yii::t('skeeks/googleApi/translate', 'Google Translate'),
                 "img"       => ['skeeks\cms\google\translate\assets\GoogleTranslateAsset', 'images/google-translate.png'],
                 'priority'  => 250,
 
@@ -20,7 +20,7 @@ return [
                 [
                     [
                         'priority'  => 0,
-                        'label' => \Yii::t('skeeks/google/translate', 'Google Translate'),
+                        'label' => \Yii::t('skeeks/googleApi/translate', 'Google Translate'),
                         "url"       => ["googleTranslate/admin-item"],
                         "img"       => ['skeeks\cms\google\translate\assets\GoogleTranslateAsset', 'images/google-translate.png'],
                     ],

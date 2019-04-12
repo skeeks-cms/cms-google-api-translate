@@ -60,17 +60,17 @@ class GoogleTranslateItem extends \skeeks\cms\models\Core
     public function attributeLabels()
     {
         return ArrayHelper::merge(parent::attributeLabels(), [
-            'id' => Yii::t('skeeks/google/translate', 'ID'),
-            'created_by' => Yii::t('skeeks/google/translate', 'Created By'),
-            'updated_by' => Yii::t('skeeks/google/translate', 'Updated By'),
-            'created_at' => Yii::t('skeeks/google/translate', 'Created At'),
-            'updated_at' => Yii::t('skeeks/google/translate', 'Updated At'),
-            'source_format' => Yii::t('skeeks/google/translate', 'Format'),
-            'source_language' => Yii::t('skeeks/google/translate', 'Source language'),
-            'source_phrase' => Yii::t('skeeks/google/translate', 'Source phrase'),
-            'target_language' => Yii::t('skeeks/google/translate', 'Target language'),
-            'target_phrase' => Yii::t('skeeks/google/translate', 'Translation result'),
-            'detected_source_language' => Yii::t('skeeks/google/translate', 'Detected source language'),
+            'id' => Yii::t('skeeks/googleApi/translate', 'ID'),
+            'created_by' => Yii::t('skeeks/googleApi/translate', 'Created By'),
+            'updated_by' => Yii::t('skeeks/googleApi/translate', 'Updated By'),
+            'created_at' => Yii::t('skeeks/googleApi/translate', 'Created At'),
+            'updated_at' => Yii::t('skeeks/googleApi/translate', 'Updated At'),
+            'source_format' => Yii::t('skeeks/googleApi/translate', 'Format'),
+            'source_language' => Yii::t('skeeks/googleApi/translate', 'Source language'),
+            'source_phrase' => Yii::t('skeeks/googleApi/translate', 'Source phrase'),
+            'target_language' => Yii::t('skeeks/googleApi/translate', 'Target language'),
+            'target_phrase' => Yii::t('skeeks/googleApi/translate', 'Translation result'),
+            'detected_source_language' => Yii::t('skeeks/googleApi/translate', 'Detected source language'),
         ]);
     }
 }

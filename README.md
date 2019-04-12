@@ -3,8 +3,8 @@ Component for work with google translate api + save in mysql db
 
 Partly wrapper over powerful official package from google — google/apiclient
 
-* [google/apiclient](https://github.com/google/google-api-php-client)
-* https://console.cloud.google.com/home/dashboard
+* [skeeks/cms-google-api](https://github.com/skeeks-cms/cms-google-api)
+
 
 Installation
 ------------
@@ -14,55 +14,14 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist skeeks/cms-google-translate "*"
+php composer.phar require --prefer-dist skeeks/cms-google-api-translate "*"
 ```
 
 or add
 
 ```
-"skeeks/cms-google-translate": "*"
+"skeeks/cms-google-api-translate": "*"
 ```
-
-
-How to use
-----------
-
-### Configuration app
-```php
-//App config
-[
-    'components'    =>
-    [
-    //....
-        'googleApi' =>
-        [
-            'class'                 => '\skeeks\yii2\googleApi\GoogleApiComponent',
-            'developer_key'         => 'YOUR_GOOLE_API_KEY',
-        ],
-    //....
-    ]
-]
-
-```
-
-### An example of the Api transliteration
-
-https://cloud.google.com/translate/v2/using_rest
-
-```php
-
-try
-{
-    $result = \Yii::$app->googleTranslate->translate('Яблоко', 'en');
-    print_r($result);
-} catch (\Exception $e)
-{
-    print_r("Ошибка");
-    print_r($e->getMessage());
-}
-
-```
-
 
 ___
 

@@ -10,24 +10,26 @@ return [
     'components' => [
         'i18n' => [
             'translations' => [
-                'skeeks/google/translate' => [
+                'skeeks/googleApi/translate' => [
                     'class'    => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@skeeks/cms/google/translate/messages',
+                    'basePath' => '@skeeks/cms/googleApi/serviceTranslate/messages',
                     'fileMap'  => [
-                        'skeeks/google/translate' => 'main.php',
+                        'skeeks/googleApi/translate' => 'main.php',
                     ],
                 ],
             ],
         ],
 
         'googleApi' => [
-            'class' => 'skeeks\cms\google\translate\GoogleApiComponent',
+            'serviceTranslateClass' => [
+                'class' => 'skeeks\cms\googleApi\serviceTranslate\GoogleApiServiceTranslate',
+            ],
         ],
     ],
 
     'modules' => [
         'googleTranslate' => [
-            'class' => 'skeeks\cms\google\translate\GoogleTranslateModule',
+            'class' => 'skeeks\cms\googleApi\serviceTranslate\GoogleTranslateModule',
         ],
     ],
 ];

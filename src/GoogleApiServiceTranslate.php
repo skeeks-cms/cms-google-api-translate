@@ -1,23 +1,21 @@
 <?php
 /**
+ * @link https://cms.skeeks.com/
+ * @copyright Copyright (c) 2010 SkeekS
+ * @license https://cms.skeeks.com/license/
  * @author Semenov Alexander <semenov@skeeks.com>
- * @link http://skeeks.com/
- * @copyright 2010 SkeekS (СкикС)
- * @date 16.08.2016
  */
 
-namespace skeeks\cms\google\translate;
+namespace skeeks\cms\googleApi\serviceTranslate;
 
 use skeeks\cms\google\translate\models\GoogleTranslateItem;
 use yii\base\Exception;
 use yii\base\InvalidArgumentException;
 
 /**
- * Class GoogleTranslateComponent
- *
- * @package skeeks\cms\google\translate
+ * @author Semenov Alexander <semenov@skeeks.com>
  */
-class GoogleApi extends \skeeks\yii2\googleApi\GoogleApiComponent
+class GoogleApiServiceTranslate extends \skeeks\yii2\googleApi\services\GoogleApiServiceTranslate
 {
     /**
      * @var bool Можно использовать кэш в базе данных
