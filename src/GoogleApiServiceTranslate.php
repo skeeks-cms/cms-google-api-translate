@@ -6,7 +6,7 @@
  * @author Semenov Alexander <semenov@skeeks.com>
  */
 
-namespace skeeks\cms\googleApi\serviceTranslate;
+namespace skeeks\cms\googleServiceTranslate;
 
 use skeeks\cms\google\translate\models\GoogleTranslateItem;
 use yii\base\Exception;

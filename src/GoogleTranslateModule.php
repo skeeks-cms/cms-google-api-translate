@@ -6,7 +6,7 @@
  * @date 16.08.2016
  */
 
-namespace skeeks\cms\googleApi\serviceTranslate;
+namespace skeeks\cms\googleServiceTranslate;
 use yii\base\Module;
 
 /**
@@ -14,5 +14,5 @@ use yii\base\Module;
  */
 class GoogleTranslateModule extends Module
 {
-    public $controllerNamespace = 'skeeks\cms\googleApi\serviceTranslate\controllers';
+    public $controllerNamespace = 'skeeks\cms\googleServiceTranslate\controllers';
 }

@@ -22,14 +22,14 @@ return [
 
         'googleApi' => [
             'serviceTranslateClass' => [
-                'class' => 'skeeks\cms\googleApi\serviceTranslate\GoogleApiServiceTranslate',
+                'class' => 'skeeks\cms\googleServiceTranslate\GoogleApiServiceTranslate',
             ],
         ],
     ],
 
     'modules' => [
         'googleTranslate' => [
-            'class' => 'skeeks\cms\googleApi\serviceTranslate\GoogleTranslateModule',
+            'class' => 'skeeks\cms\googleServiceTranslate\GoogleTranslateModule',
         ],
     ],
 ];

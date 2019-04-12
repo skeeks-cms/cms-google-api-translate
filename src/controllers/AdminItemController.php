@@ -5,10 +5,10 @@
  * @copyright 2010 SkeekS (СкикС)
  * @date 31.05.2015
  */
-namespace skeeks\cms\googleApi\serviceTranslate\controllers;
 
-use skeeks\cms\comments\models\CmsComment;
-use skeeks\cms\google\translate\models\GoogleTranslateItem;
+namespace skeeks\cms\googleServiceTranslate\controllers;
+
+use skeeks\cms\googleServiceTranslate\models\GoogleTranslateItem;
 use skeeks\cms\modules\admin\controllers\AdminModelEditorController;
 use yii\helpers\ArrayHelper;
 use yii\helpers\UnsetArrayValue;
@@ -20,9 +20,9 @@ class AdminItemController extends AdminModelEditorController
 {
     public function init()
     {
-        $this->name                   = \Yii::t('skeeks/googleApi/translate', 'Google Translate');
-        $this->modelShowAttribute      = "id";
-        $this->modelClassName          = GoogleTranslateItem::class;
+        $this->name = \Yii::t('skeeks/googleApi/translate', 'Google Translate');
+        $this->modelShowAttribute = "id";
+        $this->modelClassName = GoogleTranslateItem::class;
 
         parent::init();
 
@@ -32,7 +32,7 @@ class AdminItemController extends AdminModelEditorController
     {
         return ArrayHelper::merge(parent::actions(), [
 
-            'create' => new UnsetArrayValue()
+            'create' => new UnsetArrayValue(),
 
         ]);
     }

@@ -9,7 +9,7 @@ return [
 
     'modules' => [
         'googleTranslate' => [
-            'controllerNamespace'       => 'skeeks\cms\googleApi\serviceTranslate\console\controllers',
+            'controllerNamespace'       => 'skeeks\cms\googleServiceTranslate\console\controllers',
         ]
     ]
 ];

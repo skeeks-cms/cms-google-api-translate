@@ -5,7 +5,7 @@
  * @copyright 2010 SkeekS (СкикС)
  * @date 16.08.2016
  */
-namespace skeeks\cms\google\translate\models;
+namespace skeeks\cms\googleServiceTranslate\models;
 
 use skeeks\cms\models\CmsUser;
 use Yii;
