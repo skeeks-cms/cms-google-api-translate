@@ -1,6 +1,10 @@
 CHANGELOG
 ==============
 
+2.0.0.pre
+-----------------
+ * New version 
+ 
 1.2.0
 -----------------
  * Change src dir

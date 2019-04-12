@@ -20,8 +20,8 @@ return [
             ],
         ],
 
-        'googleTranslate' => [
-            'class' => 'skeeks\cms\google\translate\GoogleTranslateComponent',
+        'googleApi' => [
+            'class' => 'skeeks\cms\google\translate\GoogleApiComponent',
         ],
     ],
 

@@ -11,6 +11,7 @@ use skeeks\cms\comments\models\CmsComment;
 use skeeks\cms\google\translate\models\GoogleTranslateItem;
 use skeeks\cms\modules\admin\controllers\AdminModelEditorController;
 use yii\helpers\ArrayHelper;
+use yii\helpers\UnsetArrayValue;
 
 /**
  * Class AdminCommentController
@@ -32,10 +33,8 @@ class AdminItemController extends AdminModelEditorController
     {
         return ArrayHelper::merge(parent::actions(), [
 
-            'create' =>
-            [
-                'visible'    => false
-            ]
+            'create' => new UnsetArrayValue()
+
         ]);
     }
 

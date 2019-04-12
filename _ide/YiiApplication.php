@@ -9,10 +9,7 @@
  * @date 10.09.2015
  */
 namespace yii\web;
-use skeeks\cms\google\translate\GoogleTranslateComponent;
-
 /**
- * @property GoogleTranslateComponent    $googleTranslate
 
  * Class Application
  * @package yii\web
