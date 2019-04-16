@@ -9,6 +9,7 @@
 namespace skeeks\cms\googleApi\serviceTranslate;
 
 use skeeks\cms\googleApi\serviceTranslate\models\GoogleTranslateItem;
+use skeeks\cms\helpers\StringHelper;
 use yii\base\Exception;
 use yii\base\InvalidArgumentException;
 
@@ -37,12 +38,17 @@ class GoogleApiServiceTranslate extends \skeeks\yii2\googleApi\services\GoogleAp
         $source_phrase = trim($source_phrase);
         $source_format = $source_format == 'html' ? 'html' : 'text';
 
+        $isAllowCache = $this->isUseDbCache;
+        if (StringHelper::strlen($source_phrase) > 128) {
+            $isAllowCache = false;
+        }
+
         try {
             if (!$source_phrase) {
                 throw new InvalidArgumentException("$source_phrase — is empty!");
             }
 
-            if ($this->isUseDbCache) {
+            if ($isAllowCache) {
                 /**
                  * @var $googleTranslateItem GoogleTranslateItem
                  */
@@ -84,7 +90,7 @@ class GoogleApiServiceTranslate extends \skeeks\yii2\googleApi\services\GoogleAp
                 $translated = $data['translations'][0]['translatedText'];
 
                 //Сохранение результата в базу
-                if ($this->isUseDbCache) {
+                if ($isAllowCache) {
                     $googleTranslateItem = new GoogleTranslateItem();
                     $googleTranslateItem->source_format = $source_format;
                     $googleTranslateItem->source_phrase = $source_phrase;
